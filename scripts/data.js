@@ -7,7 +7,7 @@ const data = [
       c: "Venus",
       d: "Jupiter",
     },
-    answer: b,
+    answer: "Mars",
   },
   {
     question: 'Who painted the famous artwork "Mona Lisa"?',
@@ -17,7 +17,7 @@ const data = [
       c: "Leonardo da Vinci",
       d: "Michelangelo",
     },
-    answer: c,
+    answer: "Leonardo da Vinci",
   },
   {
     question: "What is the capital city of Australia?",
@@ -27,7 +27,7 @@ const data = [
       c: "Melbourne",
       d: "Brisbane",
     },
-    answer: b,
+    answer: "Canberra",
   },
   {
     question: 'Which country is known as the "Land of the Rising Sun"?',
@@ -37,7 +37,7 @@ const data = [
       c: "Japan",
       d: "Vietnam",
     },
-    answer: c,
+    answer: "Japan",
   },
   {
     question: 'Who wrote the play "Romeo and Juliet"?',
@@ -47,7 +47,7 @@ const data = [
       c: "Jane Austen",
       d: "Mark Twain",
     },
-    answer: a,
+    answer: "William Shakespeare",
   },
   {
     question: "Which country is famous for the ancient pyramids?",
@@ -57,7 +57,7 @@ const data = [
       c: "Mexico",
       d: "Italy",
     },
-    answer: b,
+    answer: "Egypt",
   },
   {
     question: "Which animal is known for its black and white stripes?",
@@ -67,7 +67,7 @@ const data = [
       c: "Zebra",
       d: "Cheetah",
     },
-    answer: c,
+    answer: "Zebra",
   },
   {
     question:
@@ -78,7 +78,7 @@ const data = [
       c: "Galileo Galilei",
       d: "Thomas Edison",
     },
-    answer: a,
+    answer: "Isaac Newton",
   },
   {
     question: "What is the largest ocean on Earth?",
@@ -88,7 +88,7 @@ const data = [
       c: "Arctic Ocean",
       d: "Pacific Ocean",
     },
-    answer: d,
+    answer: "Pacific Ocean",
   },
   {
     question: "Which famous scientist developed the theory of relativity?",
@@ -98,7 +98,7 @@ const data = [
       c: "Albert Einstein",
       d: "Nikola Tesla",
     },
-    answer: c,
+    answer: "Albert Einstein",
   },
 ];
 
