@@ -6,6 +6,7 @@
   padding: 0;
   border-style: none;
   text-decoration: none;
+  list-style-type: none;
 }
 
 *,
@@ -35,6 +36,10 @@ body {
   margin: auto;
   background-color: var(--primary);
   color: var(--secondary);
+}
+
+button {
+  font-family: "Nunito", sans-serif;
 }
 
 /* list styles */
@@ -257,6 +262,10 @@ body {
   height: 48px;
 }
 
+.h-56 {
+  height: 56px;
+}
+
 .h-64 {
   height: 64px;
 }
@@ -329,4 +338,62 @@ body {
 
 .br-12 {
   border-radius: 12px;
+}
+
+/* margin-bottom */
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-6 {
+  margin-bottom: 6px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-14 {
+  margin-bottom: 14px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-28 {
+  margin-bottom: 28px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
 }
