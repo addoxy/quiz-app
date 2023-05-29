@@ -4,6 +4,10 @@
 }
 
 .begin {
-  width: 164px;
-  height: 48px;
+  width: 240px;
+  height: 64px;
+  background-color: var(--secondary);
+  border-style: none;
+  border-radius: 12px;
+  color: var(--gray-1);
 }

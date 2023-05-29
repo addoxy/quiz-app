@@ -1,4 +1,5 @@
 /* always included */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,19 +12,23 @@
   box-sizing: inherit;
 }
 
-/* custom variables for colors */
+/* custom variables */
+
 :root {
-  --primary: #f9f9f9;
-  --secondary: #1b1b1b;
+  --primary: #5048e1;
+  --secondary: #ffffff;
   --tertiary: #387aff;
-  --gray-1: #1b1b1b;
+  --gray-1: #373737;
 }
 
+/* body styles */
+
 body {
-  font-family: "Inter", sans-serif;
-  background-image: url("assets/background.png");
+  font-family: "Nunito", sans-serif;
   max-width: 1600px;
   margin: auto;
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 /* list styles */
@@ -302,4 +307,10 @@ body {
 
 .w-96 {
   width: 96px;
+}
+
+/* pointers */
+
+.pointer {
+  cursor: pointer;
 }
