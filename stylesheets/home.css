@@ -3,11 +3,8 @@
   width: 100vw;
 }
 
-.begin {
-  width: 240px;
-  height: 64px;
-  background-color: var(--secondary);
-  border-style: none;
-  border-radius: 12px;
-  color: var(--gray-1);
+.begin-btn {
+  box-shadow: 0px 4px 12px -4px rgba(77, 77, 77, 0.75);
+  -webkit-box-shadow: 0px 4px 12px -4px rgba(77, 77, 77, 0.75);
+  -moz-box-shadow: 0px 4px 12px -4px rgba(77, 77, 77, 0.75);
 }

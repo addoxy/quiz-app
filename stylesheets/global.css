@@ -4,12 +4,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border-style: none;
+  text-decoration: none;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* custom variables */
@@ -309,8 +315,18 @@ body {
   width: 96px;
 }
 
+.w-240 {
+  width: 240px;
+}
+
 /* pointers */
 
 .pointer {
   cursor: pointer;
+}
+
+/* border-radius */
+
+.br-12 {
+  border-radius: 12px;
 }
