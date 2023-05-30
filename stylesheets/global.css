@@ -397,3 +397,9 @@ button {
 .mb-64 {
   margin-bottom: 64px;
 }
+
+/* display */
+
+.hide {
+  display: none;
+}
