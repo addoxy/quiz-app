@@ -1,9 +1,5 @@
 import data from "./data.js";
 
-// implement a function to get the next question
-// implement an event listener to check if the answer is correct and then
-// call the next question function
-
 const question = document.querySelector("#question");
 const options = document.querySelectorAll(".option");
 
@@ -31,7 +27,7 @@ function nextQuestion() {
 }
 
 function checkAnswer(userAnswer, correctAnswer) {
-  if (userAnswer == correctAnswer) {
+  if (userAnswer === correctAnswer) {
     score++;
     return true;
   }
@@ -50,18 +46,31 @@ function enableOptions() {
   });
 }
 
+function getCorrectAnswerElement(correctAnswer) {
+  for (let i = 0; i < options.length; i++) {
+    if (options[i].innerText === correctAnswer) {
+      return options[i];
+    }
+  }
+}
+
 options.forEach((option) => {
   option.addEventListener("click", (e) => {
     disableOptions();
 
     const correctAnswer = data[questionIndex].answer;
+    const correctAnswerElement = getCorrectAnswerElement(correctAnswer);
 
     if (checkAnswer(e.target.innerText, correctAnswer)) {
       e.target.classList.add("green");
       setTimeout(() => e.target.classList.remove("green"), 1000);
     } else {
       e.target.classList.add("red");
-      setTimeout(() => e.target.classList.remove("red"), 1000);
+      setTimeout(() => correctAnswerElement.classList.add("green"), 500);
+      setTimeout(() => {
+        e.target.classList.remove("red");
+        correctAnswerElement.classList.remove("green");
+      }, 1000);
     }
 
     questionIndex++;
