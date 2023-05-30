@@ -1,16 +1,78 @@
+import data from "./data.js";
+
+// implement a function to get the next question
+// implement an event listener to check if the answer is correct and then
+// call the next question function
+
 const question = document.querySelector("#question");
+const options = document.querySelectorAll(".option");
 
-const options = {
-  option1: document.querySelector("#option1"),
-  option2: document.querySelector("#option2"),
-  option3: document.querySelector("#option3"),
-  option4: document.querySelector("#option4"),
-};
+let questionIndex = 0;
+let score = 0;
+let numberOfQuestions = data.length;
 
-let questsionIndex = 0;
-let correctAnswers = 0;
+function start() {
+  nextQuestion();
+}
 
-function nextQuestion() {}
-function shuffleQuestions() {}
-function runQuiz() {}
-function checkAnswer() {}
+function nextQuestion() {
+  enableOptions();
+
+  const currentQuestion = data[questionIndex].question;
+  const currentOptions = data[questionIndex].options;
+
+  let optionIndex = 0;
+
+  question.innerText = currentQuestion;
+  options.forEach((option) => {
+    option.innerText = currentOptions[optionIndex];
+    optionIndex++;
+  });
+}
+
+function checkAnswer(userAnswer, correctAnswer) {
+  if (userAnswer == correctAnswer) {
+    score++;
+    return true;
+  }
+  return false;
+}
+
+function disableOptions() {
+  options.forEach((option) => {
+    option.disabled = true;
+  });
+}
+
+function enableOptions() {
+  options.forEach((option) => {
+    option.disabled = false;
+  });
+}
+
+options.forEach((option) => {
+  option.addEventListener("click", (e) => {
+    disableOptions();
+
+    const correctAnswer = data[questionIndex].answer;
+
+    if (checkAnswer(e.target.innerText, correctAnswer)) {
+      e.target.classList.add("green");
+      setTimeout(() => e.target.classList.remove("green"), 1000);
+    } else {
+      e.target.classList.add("red");
+      setTimeout(() => e.target.classList.remove("red"), 1000);
+    }
+
+    questionIndex++;
+    numberOfQuestions--;
+
+    if (numberOfQuestions === 0) {
+      setTimeout(() => window.location.assign("highscores.html"), 1000);
+    } else {
+      setTimeout(() => nextQuestion(), 1000);
+    }
+  });
+});
+
+start();

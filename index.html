@@ -6,58 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
     <link rel="icon" href="assets/logo.svg" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="stylesheets/global.css" />
     <link rel="stylesheet" href="stylesheets/home.css" />
     <link rel="stylesheet" href="stylesheets/quiz.css" />
-    <script type="module" defer src="scripts/events.js"></script>
   </head>
   <body>
-    <div class="container flex d-column jc-c ai-c">
-      <h1 class="font-64 text-center">Let's Play</h1>
+    <div class="container flex d-column jc-c ai-c text-white">
+      <h1 class="font-64 text-center">Test Yourself</h1>
       <div class="h-72"></div>
       <a href="quiz.html">
         <button
-          class="w-240 h-64 text-gray-1 bg-secondary begin-btn font-24 fw-sb br-12 pointer"
+          class="w-240 h-64 text-white bg-secondary begin-btn font-24 fw-m br-12 mb-16 pointer"
         >
-          Begin!
+          Play
         </button>
       </a>
-    </div>
-    <div class="hide container flex d-column jc-c ai-c">
-      <h2 id="question" class="font-32 text-center"></h2>
-      <div class="h-72"></div>
-      <ul>
-        <li>
-          <button
-            id="option-1"
-            class="option w-240 h-56 text-gray-1 fw-sb font-18 br-12 mb-14 pointer"
-          ></button>
-        </li>
-        <li>
-          <button
-            id="option-2"
-            class="option w-240 h-56 text-gray-1 fw-sb font-18 br-12 mb-14 pointer"
-          ></button>
-        </li>
-        <li>
-          <button
-            id="option-3"
-            class="option w-240 h-56 text-gray-1 fw-sb font-18 br-12 mb-14 pointer"
-          ></button>
-        </li>
-        <li>
-          <button
-            id="option-4"
-            class="option w-240 h-56 text-gray-1 fw-sb font-18 br-12 mb-14 pointer"
-          ></button>
-        </li>
-      </ul>
+      <a href="highscores.html">
+        <button
+          class="w-240 h-64 text-primary bg-tertiary begin-btn font-24 fw-m br-12 pointer"
+        >
+          Highscores
+        </button>
+      </a>
     </div>
   </body>
 </html>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+
 /* always included */
 
 * {
@@ -22,16 +24,16 @@ html {
 /* custom variables */
 
 :root {
-  --primary: #5048e1;
-  --secondary: #ffffff;
-  --tertiary: #387aff;
+  --primary: #121212;
+  --secondary: #5048e1;
+  --tertiary: #fde047;
   --gray-1: #373737;
 }
 
 /* body styles */
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Nova Square", sans-serif;
   max-width: 1600px;
   margin: auto;
   background-color: var(--primary);
@@ -39,7 +41,15 @@ body {
 }
 
 button {
-  font-family: "Nunito", sans-serif;
+  font-family: "Nova Square", sans-serif;
+  box-shadow: 0px 4px 12px -4px rgba(77, 77, 77, 0.75);
+  -webkit-box-shadow: 0px 4px 12px -4px rgba(77, 77, 77, 0.75);
+  -moz-box-shadow: 0px 4px 12px -4px rgba(77, 77, 77, 0.75);
+}
+
+button:hover {
+  transition: transform 400ms;
+  transform: scale(1.1);
 }
 
 /* list styles */
