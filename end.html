@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="assets/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="stylesheets/global.css" />
+    <link rel="stylesheet" href="stylesheets/home.css" />
+    <link rel="stylesheet" href="stylesheets/quiz.css" />
+    <link rel="stylesheet" href="stylesheets/end.css" />
+    <script defer src="scripts/endgame.js"></script>
+  </head>
+  <body>
+    <div>
+      <form class="container flex d-column ai-c jc-c text-white">
+        <div class="font-64 mb-48">You've reached the end!</div>
+        <div class="font-48 mb-48">
+          Your score: <span class="text-tertiary">1</span>
+        </div>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          id="nameInput"
+          class="mb-20 w-200 h-16 bg-white font-18 br-8"
+        />
+        <button
+          id="saveBtn"
+          class="w-240 h-64 text-white bg-secondary begin-btn font-24 fw-m br-12 mb-16 pointer"
+        >
+          Save
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

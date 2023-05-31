@@ -77,7 +77,7 @@ options.forEach((option) => {
     numberOfQuestions--;
 
     if (numberOfQuestions === 0) {
-      setTimeout(() => window.location.assign("highscores.html"), 1000);
+      setTimeout(() => window.location.assign("end.html"), 1000);
     } else {
       setTimeout(() => nextQuestion(), 1000);
     }
