@@ -113,6 +113,14 @@ input {
   background-color: #fefefe;
 }
 
+.bg-green {
+  background-color: #22c55e;
+}
+
+.bg-red {
+  background-color: #ef4444;
+}
+
 /* flex parent properties */
 
 .flex {
@@ -441,6 +449,11 @@ input {
 
 .hide {
   display: none;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
 }
 
 /* animations */

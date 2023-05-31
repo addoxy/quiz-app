@@ -6,3 +6,6 @@ if (input.value === "") {
 } else if (input.value !== "") {
   console.log("Something in it");
 }
+
+// prevent default on button click
+// it reloads the page with ?name=whatever when clicked

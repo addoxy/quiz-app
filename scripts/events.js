@@ -62,14 +62,14 @@ options.forEach((option) => {
     const correctAnswerElement = getCorrectAnswerElement(correctAnswer);
 
     if (checkAnswer(e.target.innerText, correctAnswer)) {
-      e.target.classList.add("green");
-      setTimeout(() => e.target.classList.remove("green"), 1000);
+      e.target.classList.add("bg-green");
+      setTimeout(() => e.target.classList.remove("bg-green"), 1000);
     } else {
-      e.target.classList.add("red");
-      setTimeout(() => correctAnswerElement.classList.add("green"), 500);
+      e.target.classList.add("bg-red");
+      setTimeout(() => correctAnswerElement.classList.add("bg-green"), 500);
       setTimeout(() => {
-        e.target.classList.remove("red");
-        correctAnswerElement.classList.remove("green");
+        e.target.classList.remove("bg-red");
+        correctAnswerElement.classList.remove("bg-green");
       }, 1000);
     }
 
