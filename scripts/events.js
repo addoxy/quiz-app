@@ -28,7 +28,7 @@ function nextQuestion() {
 
 function checkAnswer(userAnswer, correctAnswer) {
   if (userAnswer === correctAnswer) {
-    score++;
+    score = score + 100;
     return true;
   }
   return false;
