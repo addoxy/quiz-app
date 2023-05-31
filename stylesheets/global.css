@@ -52,6 +52,10 @@ button:hover {
   transform: scale(1.1);
 }
 
+input {
+  font-family: "Nova Square", sans-serif;
+}
+
 /* list styles */
 
 .no-list {
@@ -98,6 +102,10 @@ button:hover {
 
 .bg-tertiary {
   background-color: var(--tertiary);
+}
+
+.bg-white {
+  background-color: #fefefe;
 }
 
 /* flex parent properties */
@@ -334,6 +342,10 @@ button:hover {
   width: 96px;
 }
 
+.w-200 {
+  width: 200px;
+}
+
 .w-240 {
   width: 240px;
 }
@@ -345,6 +357,18 @@ button:hover {
 }
 
 /* border-radius */
+
+.br-6 {
+  border-radius: 6px;
+}
+
+.br-8 {
+  border-radius: 8px;
+}
+
+.br-10 {
+  border-radius: 10px;
+}
 
 .br-12 {
   border-radius: 12px;
