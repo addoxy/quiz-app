@@ -7,11 +7,14 @@
     <title>Info</title>
     <link rel="icon" href="assets/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="stylesheets/global.css" />
+    <script type="module" src="scripts/info.js"></script>
   </head>
   <body>
     <div class="container flex d-column jc-c ai-c text-white">
       <div class="font-48 mb-32">
-        There are <span class="text-tertiary">10</span> questions in this quiz.
+        There are
+        <span id="numQuestions" class="text-tertiary"></span> questions in this
+        quiz.
       </div>
       <div class="font-48">
         Each question is worth <span class="text-tertiary">100</span> points.

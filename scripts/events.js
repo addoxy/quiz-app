@@ -60,6 +60,24 @@ function getCorrectAnswerElement(correctAnswer) {
   }
 }
 
+// function saveScore(name, score) {
+//   if (scoreList.childElementCount === 0) {
+//     const li = document.createElement("li");
+//     li.classList.add("mb-16");
+//     li.innerText = `${name}: `;
+
+//     const span = document.createElement("span");
+//     span.classList.add("text-tertiary");
+//     li.appendChild(span);
+//     span.innerText = score;
+
+//     scoreList.appendChild(li);
+//   }
+//   if (scoreList.childElementCount > 5) {
+//     scoreList.removeChild(scoreList.lastElementChild);
+//   }
+// }
+
 options.forEach((option) => {
   option.addEventListener("click", (e) => {
     disableOptions();
