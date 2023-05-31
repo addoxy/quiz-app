@@ -1,19 +1,25 @@
 import data from "./data.js";
 
+const quizContainer = document.querySelector("#quiz-container");
+const endContainer = document.querySelector("#end-container");
 const question = document.querySelector("#question");
 const options = document.querySelectorAll(".option");
+const userScore = document.querySelector("#score");
+const userFinalScore = document.querySelector("#finalScore");
 
 let questionIndex = 0;
 let score = 0;
+let finalScore = 0;
 let numberOfQuestions = data.length;
 
 function start() {
+  userScore.innerText = score;
   nextQuestion();
 }
 
 function nextQuestion() {
+  userScore.innerText = score;
   enableOptions();
-
   const currentQuestion = data[questionIndex].question;
   const currentOptions = data[questionIndex].options;
 
@@ -77,7 +83,12 @@ options.forEach((option) => {
     numberOfQuestions--;
 
     if (numberOfQuestions === 0) {
-      setTimeout(() => window.location.assign("end.html"), 1000);
+      finalScore = score;
+      setTimeout(() => {
+        userFinalScore.innerText = finalScore;
+        quizContainer.classList.add("hide");
+        endContainer.classList.remove("hide");
+      }, 1000);
     } else {
       setTimeout(() => nextQuestion(), 1000);
     }

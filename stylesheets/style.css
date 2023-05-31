@@ -2,3 +2,7 @@
   padding: 20px;
   outline: none;
 }
+
+#score-list {
+  list-style-type: decimal;
+}
