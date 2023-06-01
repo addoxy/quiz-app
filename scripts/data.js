@@ -34,42 +34,42 @@ const data = [
     ],
     answer: "William Shakespeare",
   },
-  // {
-  //   question: "Which country is famous for the ancient pyramids?",
-  //   options: ["Greece", "Egypt", "Mexico", "Italy"],
-  //   answer: "Egypt",
-  // },
-  // {
-  //   question: "Which animal is known for its black and white stripes?",
-  //   options: ["Giraffe", "Panda", "Zebra", "Cheetah"],
-  //   answer: "Zebra",
-  // },
-  // {
-  //   question:
-  //     "Who is credited with discovering gravity after seeing an apple fall from a tree?",
-  //   options: [
-  //     "Isaac Newton",
-  //     "Albert Einstein",
-  //     "Galileo Galilei",
-  //     "Thomas Edison",
-  //   ],
-  //   answer: "Isaac Newton",
-  // },
-  // {
-  //   question: "What is the largest ocean on Earth?",
-  //   options: [
-  //     "Atlantic Ocean",
-  //     "Indian Ocean",
-  //     "Arctic Ocean",
-  //     "Pacific Ocean",
-  //   ],
-  //   answer: "Pacific Ocean",
-  // },
-  // {
-  //   question: "Which famous scientist developed the theory of relativity?",
-  //   options: ["Isaac Newton", "Marie Curie", "Albert Einstein", "Nikola Tesla"],
-  //   answer: "Albert Einstein",
-  // },
+  {
+    question: "Which country is famous for the ancient pyramids?",
+    options: ["Greece", "Egypt", "Mexico", "Italy"],
+    answer: "Egypt",
+  },
+  {
+    question: "Which animal is known for its black and white stripes?",
+    options: ["Giraffe", "Panda", "Zebra", "Cheetah"],
+    answer: "Zebra",
+  },
+  {
+    question:
+      "Who is credited with discovering gravity after seeing an apple fall from a tree?",
+    options: [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Galileo Galilei",
+      "Thomas Edison",
+    ],
+    answer: "Isaac Newton",
+  },
+  {
+    question: "What is the largest ocean on Earth?",
+    options: [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Arctic Ocean",
+      "Pacific Ocean",
+    ],
+    answer: "Pacific Ocean",
+  },
+  {
+    question: "Which famous scientist developed the theory of relativity?",
+    options: ["Isaac Newton", "Marie Curie", "Albert Einstein", "Nikola Tesla"],
+    answer: "Albert Einstein",
+  },
 ];
 
 export default data;
