@@ -1,8 +1,62 @@
-#nameInput {
+#name-input {
   padding: 20px;
   outline: none;
 }
 
 #score-list {
   list-style-type: circle;
+}
+
+#modal {
+  margin: auto;
+  padding: 40px;
+  animation: wobble 2s ease 0s 1 normal forwards;
+}
+
+#close-modal {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--secondary);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes forward {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
 }

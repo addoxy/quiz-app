@@ -20,15 +20,25 @@
         type="text"
         name="name"
         placeholder="Enter your name"
-        id="nameInput"
+        id="name-input"
         class="mb-20 w-200 h-28 bg-white font-18 br-8"
       />
       <button
-        id="saveBtn"
+        id="save-btn"
         class="w-240 h-64 text-white bg-secondary begin-btn font-24 fw-m br-12 mb-16 pointer"
       >
         Save
       </button>
+
+      <dialog id="modal" class="br-12">
+        <div class="mb-20 font-24">Please enter a name!</div>
+        <button
+          id="close-modal"
+          class="w-124 h-48 font-18 br-8 pointer text-white"
+        >
+          Close
+        </button>
+      </dialog>
     </form>
   </body>
 </html>
