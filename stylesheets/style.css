@@ -23,16 +23,6 @@ dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-@keyframes forward {
-  0% {
-    transform: scale(0);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
 @keyframes wobble {
   0%,
   100% {

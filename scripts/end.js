@@ -11,7 +11,11 @@ saveBtn.addEventListener("click", (e) => {
   if (nameInput.value === "") {
     modal.showModal();
   } else {
-    // append the score to the highscores list
+    localStorage.setItem(
+      "highscore",
+      `${nameInput.value},${finalScore.innerText}`
+    );
+    window.location.assign("index.html");
   }
 });
 
