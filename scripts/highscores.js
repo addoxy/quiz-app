@@ -1,22 +1,27 @@
 const scoreList = document.querySelector("#score-list");
 
-function saveScore() {
-  const [name, score] = localStorage.getItem("highscore").split(",");
+function displayHighscores() {
+  try {
+    const highScores = JSON.parse(localStorage.getItem("highScores"));
+    highScores.sort((score1, score2) => score2.score - score1.score);
 
-  scores = Array.from(scoreList.children);
+    highScores.forEach((object) => {
+      const name = object.name;
+      const score = object.score;
 
-  if (scores.length === 0) {
-    scoreList.appendChild(createElement(name, score));
-  } else {
-    scores.forEach((item) => {
-      if (score > item.lastElementChild.innerText) {
-        item.insertAdjacentElement("beforebegin", createElement(name, score));
-      }
+      scoreList.appendChild(createElement(name, score));
     });
-  }
 
-  if (scoreList.childElementCount > 5) {
-    scoreList.removeChild(scoreList.lastElementChild);
+    console.log(scoreList.childElementCount);
+
+    while (scoreList.childElementCount > 5) {
+      scoreList.removeChild(scoreList.lastElementChild);
+      highScores.pop();
+    }
+
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+  } catch (error) {
+    // do nothing;
   }
 }
 
@@ -35,4 +40,4 @@ function createElement(name, score) {
   return li;
 }
 
-saveScore();
+displayHighscores();

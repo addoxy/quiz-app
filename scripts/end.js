@@ -6,15 +6,21 @@ const closeModal = document.querySelector("#close-modal");
 
 finalScore.innerText = localStorage.getItem("latest-score");
 
+const highScores = localStorage.getItem("highScores")
+  ? JSON.parse(localStorage.getItem("highScores"))
+  : [];
+console.log(highScores);
+
 saveBtn.addEventListener("click", (e) => {
   e.preventDefault();
   if (nameInput.value === "") {
     modal.showModal();
   } else {
-    localStorage.setItem(
-      "highscore",
-      `${nameInput.value},${finalScore.innerText}`
-    );
+    highScores.push({
+      name: nameInput.value,
+      score: finalScore.innerText,
+    });
+    localStorage.setItem("highScores", JSON.stringify(highScores));
     window.location.assign("index.html");
   }
 });
