@@ -12,8 +12,6 @@ function displayHighscores() {
       scoreList.appendChild(createElement(name, score));
     });
 
-    console.log(scoreList.childElementCount);
-
     while (scoreList.childElementCount > 5) {
       scoreList.removeChild(scoreList.lastElementChild);
       highScores.pop();

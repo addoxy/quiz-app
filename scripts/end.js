@@ -9,7 +9,6 @@ finalScore.innerText = localStorage.getItem("latest-score");
 const highScores = localStorage.getItem("highScores")
   ? JSON.parse(localStorage.getItem("highScores"))
   : [];
-console.log(highScores);
 
 saveBtn.addEventListener("click", (e) => {
   e.preventDefault();
