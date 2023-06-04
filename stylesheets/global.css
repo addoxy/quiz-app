@@ -39,8 +39,6 @@ html {
 
 body {
   font-family: "Nova Square", sans-serif;
-  max-width: 1600px;
-  margin: auto;
   background-color: var(--primary);
   color: var(--secondary);
   animation: fade 1.5s ease 0s 1 normal forwards;
